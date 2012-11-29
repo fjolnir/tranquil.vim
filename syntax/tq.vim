@@ -21,7 +21,7 @@ syn keyword tqKeywordLiteral super self yes no nil
 "syn match tqConstant "[^a-z][A-Z][A-Za-z0-9_]*" contained
 
 " Class definition
-syn match tqClassDef "^#[A-Z][A-Za-z0-9_]*\s*(<\s*[A-Z][A-Za-z0-9_]*)?"
+syn match tqClassDef "^@[A-Z][A-Za-z0-9_]*\s*(<\s*[A-Z][A-Za-z0-9_]*)?"
 
 " Method definitions
 syn match stInstMethod    "^\s*-\s*"
@@ -44,9 +44,9 @@ syn region tqInterpolation matchgroup=tqInterpolated start="«" end="»" contain
 syn case ignore
 
 " Symbols
-syn match  tqSymbol    "@\(\w\|[-*/\\:=!+<>@]\)\+[ ,;\]}`\n)]\@="
-syn match  tqSymbol    "@\"[^\"]*\""
-syn match  tqSymbol    "@'[^']*'"
+syn match  tqSymbol    "#\(\w\|[-*/\\:=!+<>@]\)\+[ ,;\]}`\n)]\@="
+syn match  tqSymbol    "#\"[^\"]*\""
+syn match  tqSymbol    "#'[^']*'"
 
 " some representations of numbers
 syn match  tqNumber    "\<\d\+\(u\=l\=\|lu\|f\)\>"
