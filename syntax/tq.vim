@@ -14,7 +14,7 @@ let s:cpo_save = &cpo
 set cpo&vim
 
 " some keywords and standard methods
-syn keyword tqKeyword if then else unless while until import async wait whenFinished lock
+syn keyword tqKeyword if then else unless while until import async wait whenFinished lock and or
 syn keyword tqKeywordLiteral super self yes no nil
 
 " Constants
