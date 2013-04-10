@@ -15,7 +15,7 @@ set cpo&vim
 
 " some keywords and standard methods
 syn keyword tqKeyword if then else unless while until import async wait whenFinished lock and or
-syn keyword tqKeywordLiteral super self yes no nil
+syn keyword tqKeywordLiteral super self yes no nil valid
 
 " Constants
 "syn match tqConstant "[^a-z][A-Z][A-Za-z0-9_]*" contained
